@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-12_29 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.frame-12_29 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.frame-12_30 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(189, 241, 202, 1);
+}
+
+.rectangle-12_31 {
+  width: 1231px;
+  height: 76px;
+  position: absolute;
+  left: 32px;
+  top: 22px;
+  border-radius: 0px 0px 46px 46px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-12_32 {
+  font-size: 56px;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 1136px;
+  height: 21px;
+  position: absolute;
+  left: 97px;
+  top: 22px;
+}
+
+.paragraph-12_32_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_32_0_1 {
+  font-size: 56px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rectangle-12_33 {
+  width: 46px;
+  height: 48px;
+  position: absolute;
+  left: 1175px;
+  top: 33px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./image/2a8e0456b29a1775c1e6ca9ec7fcd480b2578d93.png);
+}
+
+.rectangle-12_34 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 249, 230, 1);
+}
+
+.stroke-wrapper-12_34 {
+  position: absolute;
+  left: 73px;
+  top: 161px;
+  width: 1172px;
+  height: 575px;
+}
+
+.stroke-12_34 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 0px 0px 0px 0px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_35 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 73px;
+  top: 161px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.rectangle-12_36 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 73px;
+  top: 316px;
+  background-color: rgba(18, 159, 73, 0.11999999731779099);
+}
+
+.rectangle-12_37 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 79px;
+  top: 488px;
+  background-color: rgba(18, 159, 73, 0.12000000476837158);
+}
+
+.rectangle-12_38 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 73px;
+  top: 660px;
+  background-color: rgba(18, 159, 73, 0.12000000476837158);
+}
+
+.vector-12_39 {
+  width: 1.999969482421875px;
+  height: 575.0017242431641px;
+  background-image: url(./image/Line_12_39.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -111.50043977714206px;
+  top: 447.9991229598087px;
+}
+
+.vector-12_40 {
+  width: 1.9998626708984375px;
+  height: 574.0017852783203px;
+  background-image: url(./image/Line_12_40.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 119.99948652353378px;
+  top: 448.4991513737765px;
+}
+
+.vector-12_119 {
+  width: 1.9998664855957031px;
+  height: 574.0017852783203px;
+  background-image: url(./image/Line_12_119.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 292.9994865235338px;
+  top: 447.4991513737765px;
+}
+
+.vector-12_120 {
+  width: 1.9998626708984375px;
+  height: 574.0017852783203px;
+  background-image: url(./image/Line_12_120.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 535.9994865235337px;
+  top: 447.4991513737765px;
+}
+
+.vector-12_41 {
+  width: 4.999908447265625px;
+  height: 575.0069580078125px;
+  background-image: url(./image/Line_12_41.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 683.9929740669771px;
+  top: 447.99652375920766px;
+}
+
+.text-12_42 {
+  font-size: 36px;
+  font-family: Kameron;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 1152px;
+  height: auto;
+  position: absolute;
+  left: 81px;
+  top: 177px;
+}
+
+.paragraph-12_42_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_42_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_43 {
+  width: 198px;
+  height: 62px;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  transform: translateX(calc(-50% + -501px));
+}
+
+.rectangle-12_44 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.stroke-wrapper-12_44 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 165px;
+  height: 56px;
+  transform: translateX(calc(-50% + 0.5px));
+}
+
+.stroke-12_44 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(28, 164, 81, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_45 {
+  font-size: 36px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 198px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_45_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_45_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_101 {
+  width: 168px;
+  height: 458px;
+  position: absolute;
+  left: 1020px;
+  top: 255px;
+}
+
+.rectangle-12_102 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_103 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.paragraph-12_103_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_103_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_104 {
+  width: 168px;
+  height: 381px;
+  position: absolute;
+  left: 0px;
+  top: 77px;
+}
+
+.rectangle-12_105 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_106 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.paragraph-12_106_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_106_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_107 {
+  width: 168px;
+  height: 303px;
+  position: absolute;
+  left: 0px;
+  top: 78px;
+}
+
+.rectangle-12_108 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_109 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.paragraph-12_109_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_109_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_110 {
+  width: 168px;
+  height: 214px;
+  position: absolute;
+  left: 0px;
+  top: 89px;
+}
+
+.rectangle-12_111 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_112 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.paragraph-12_112_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_112_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_113 {
+  width: 168px;
+  height: 127px;
+  position: absolute;
+  left: 0px;
+  top: 87px;
+}
+
+.rectangle-12_114 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_115 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.paragraph-12_115_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_115_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_116 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 84px;
+}
+
+.rectangle-12_117 {
+  width: 168px;
+  height: 43px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_118 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 21px;
+  position: absolute;
+  left: 15px;
+  top: 6px;
+}
+
+.paragraph-12_118_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_118_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-12_29">
+  <div id="12_29" class="frame-12_29">
+    <div id="12_30" class="frame-12_30">
+      <div id="12_31" class="rectangle-12_31"></div>
+      <div id="12_32" class="text-12_32">
+        <p id="12_32_0" class="paragraph-12_32_0">
+<span id="12_32_0_1" class="span-12_32_0_1">Мои полисы</span></p>
+      </div>
+      <div id="12_33" class="rectangle-12_33"></div>
+      <div id="12_34" class="stroke-wrapper-12_34">
+        <div class="stroke-12_34"></div>
+        <div class="rectangle-12_34"></div>
+      </div>
+      <div id="12_35" class="rectangle-12_35"></div>
+      <div id="12_36" class="rectangle-12_36"></div>
+      <div id="12_37" class="rectangle-12_37"></div>
+      <div id="12_38" class="rectangle-12_38"></div>
+      <div id="12_39" class="vector-12_39"></div>
+      <div id="12_40" class="vector-12_40"></div>
+      <div id="12_119" class="vector-12_119"></div>
+      <div id="12_120" class="vector-12_120"></div>
+      <div id="12_41" class="vector-12_41"></div>
+      <div id="12_42" class="text-12_42">
+        <p id="12_42_0" class="paragraph-12_42_0">
+<span id="12_42_0_1" class="span-12_42_0_1">   Id     Название   Начало  Окончание   Статус   Действия</span></p>
+      </div>
+      <div id="12_43" class="group-12_43">
+        <div id="12_44" class="stroke-wrapper-12_44">
+          <div class="stroke-12_44"></div>
+          <div class="rectangle-12_44"></div>
+        </div>
+        <div id="12_45" class="text-12_45">
+          <p id="12_45_0" class="paragraph-12_45_0">
+<span id="12_45_0_1" class="span-12_45_0_1">Назад</span></p>
+        </div>
+      </div>
+      <div id="12_101" class="group-12_101">
+        <div id="12_102" class="rectangle-12_102"></div>
+        <div id="12_103" class="text-12_103">
+          <p id="12_103_0" class="paragraph-12_103_0">
+<span id="12_103_0_1" class="span-12_103_0_1">Действия</span></p>
+        </div>
+        <div id="12_104" class="group-12_104">
+          <div id="12_105" class="rectangle-12_105"></div>
+          <div id="12_106" class="text-12_106">
+            <p id="12_106_0" class="paragraph-12_106_0">
+<span id="12_106_0_1" class="span-12_106_0_1">Действия</span></p>
+          </div>
+          <div id="12_107" class="group-12_107">
+            <div id="12_108" class="rectangle-12_108"></div>
+            <div id="12_109" class="text-12_109">
+              <p id="12_109_0" class="paragraph-12_109_0">
+<span id="12_109_0_1" class="span-12_109_0_1">Действия</span></p>
+            </div>
+            <div id="12_110" class="group-12_110">
+              <div id="12_111" class="rectangle-12_111"></div>
+              <div id="12_112" class="text-12_112">
+                <p id="12_112_0" class="paragraph-12_112_0">
+<span id="12_112_0_1" class="span-12_112_0_1">Действия</span></p>
+              </div>
+              <div id="12_113" class="group-12_113">
+                <div id="12_114" class="rectangle-12_114"></div>
+                <div id="12_115" class="text-12_115">
+                  <p id="12_115_0" class="paragraph-12_115_0">
+<span id="12_115_0_1" class="span-12_115_0_1">Действия</span></p>
+                </div>
+                <div id="12_116" class="group-12_116">
+                  <div id="12_117" class="rectangle-12_117"></div>
+                  <div id="12_118" class="text-12_118">
+                    <p id="12_118_0" class="paragraph-12_118_0">
+<span id="12_118_0_1" class="span-12_118_0_1">Действия</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

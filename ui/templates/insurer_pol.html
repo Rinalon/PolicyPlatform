@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+ol li {
+  list-style-position: inside;
+}
+
+ol li::marker, ul li::before {
+  letter-spacing: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-0_1 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.canvas-0_1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.frame-12_47 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.frame-12_48 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(189, 241, 202, 1);
+}
+
+.rectangle-12_49 {
+  width: 1231px;
+  height: 76px;
+  position: absolute;
+  left: 32px;
+  top: 22px;
+  border-radius: 0px 0px 46px 46px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-12_50 {
+  font-size: 56px;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 1136px;
+  height: 21px;
+  position: absolute;
+  left: 97px;
+  top: 22px;
+}
+
+.paragraph-12_50_0 {
+  line-height: 67.7727279663086px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_50_0_1 {
+  font-size: 56px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rectangle-12_51 {
+  width: 46px;
+  height: 48px;
+  position: absolute;
+  left: 1175px;
+  top: 33px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./image/2a8e0456b29a1775c1e6ca9ec7fcd480b2578d93.png);
+}
+
+.group-12_84 {
+  width: 1172px;
+  height: 482px;
+  position: absolute;
+  left: 61px;
+  top: 150px;
+}
+
+.rectangle-12_52 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(223, 249, 230, 1);
+}
+
+.stroke-wrapper-12_52 {
+  position: absolute;
+  left: 0px;
+  top: 8.695315045770258e-8px;
+  width: 1172px;
+  height: 481.9997863769531px;
+}
+
+.stroke-12_52 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 0px 0px 0px 0px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_53 {
+  width: 1172px;
+  height: 116.66236877441406px;
+  position: absolute;
+  left: 0px;
+  top: 8.695315045770258e-8px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.rectangle-12_54 {
+  width: 1172px;
+  height: 116.66236877441406px;
+  position: absolute;
+  left: 0px;
+  top: 237.92984008789062px;
+  background-color: rgba(18, 159, 73, 0.12000000476837158);
+}
+
+.vector-12_57 {
+  width: 2.99993896484375px;
+  height: 480.4689636230469px;
+  background-image: url(./image/Line_12_57.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -131.7344826110457px;
+  top: 241.26535358856674px;
+}
+
+.vector-12_58 {
+  width: 1.99993896484375px;
+  height: 480.4669189453125px;
+  background-image: url(./image/Line_12_58.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 115.76705760512075px;
+  top: 241.26632243064833px;
+}
+
+.vector-12_59 {
+  width: 1.9998607635498047px;
+  height: 482.00189208984375px;
+  background-image: url(./image/Line_12_59.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 308.9994587203025px;
+  top: 240.49887151382822px;
+}
+
+.vector-12_85 {
+  width: 1.9998626708984375px;
+  height: 482.00189208984375px;
+  background-image: url(./image/Line_12_85.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 555.9993976851463px;
+  top: 240.49887151382822px;
+}
+
+.vector-12_86 {
+  width: 1px;
+  height: 480.4649658203125px;
+  background-image: url(./image/Line_12_86.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 708.2675170898438px;
+  top: 241.26751708984375px;
+}
+
+.text-12_60 {
+  font-size: 36px;
+  font-family: Kameron;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 1152px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 8px;
+  top: 24.56049919128418px;
+}
+
+.paragraph-12_60_0 {
+  line-height: 42.732421875px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_60_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  white-space: pre-wrap;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_94 {
+  width: 168px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 978px;
+  top: 151.9680938720703px;
+}
+
+.rectangle-12_91 {
+  width: 168px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_93 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 32.23565673828125px;
+  position: absolute;
+  left: 15px;
+  top: 9.210186958312988px;
+}
+
+.paragraph-12_93_0 {
+  line-height: 23.740234375px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_93_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_95 {
+  width: 168px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 978px;
+  top: 262.4903259277344px;
+}
+
+.rectangle-12_96 {
+  width: 168px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_97 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 32.23565673828125px;
+  position: absolute;
+  left: 15px;
+  top: 9.210186958312988px;
+}
+
+.paragraph-12_97_0 {
+  line-height: 23.740234375px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_97_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_98 {
+  width: 168px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 978px;
+  top: 368.4075012207031px;
+}
+
+.rectangle-12_99 {
+  width: 168px;
+  height: 66.00634002685547px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-12_100 {
+  font-size: 20px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 130px;
+  height: 32.23565673828125px;
+  position: absolute;
+  left: 15px;
+  top: 9.210186958312988px;
+}
+
+.paragraph-12_100_0 {
+  line-height: 23.740234375px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_100_0_1 {
+  font-size: 20px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_61 {
+  width: 198px;
+  height: 62px;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  transform: translateX(calc(-50% + -501px));
+}
+
+.rectangle-12_62 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.stroke-wrapper-12_62 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 165px;
+  height: 56px;
+  transform: translateX(calc(-50% + 0.5px));
+}
+
+.stroke-12_62 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(28, 164, 81, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_63 {
+  font-size: 36px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 198px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_63_0 {
+  line-height: 42.732421875px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_63_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_87 {
+  width: 368px;
+  height: 62px;
+  position: absolute;
+  left: 50%;
+  top: 682px;
+  transform: translateX(calc(-50% + 403px));
+}
+
+.rectangle-12_88 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.stroke-wrapper-12_88 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 357px;
+  height: 56px;
+  transform: translateX(calc(-50% + 5.5px));
+}
+
+.stroke-12_88 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(28, 164, 81, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_89 {
+  font-size: 36px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 368px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_89_0 {
+  line-height: 42.732421875px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_89_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-0_1">
+  <div id="0_1" class="canvas-0_1">
+    <div id="12_47" class="frame-12_47">
+      <div id="12_48" class="frame-12_48">
+        <div id="12_49" class="rectangle-12_49"></div>
+        <div id="12_50" class="text-12_50">
+          <p id="12_50_0" class="paragraph-12_50_0">
+<span id="12_50_0_1" class="span-12_50_0_1">Мои полисы</span></p>
+        </div>
+        <div id="12_51" class="rectangle-12_51"></div>
+        <div id="12_84" class="group-12_84">
+          <div id="12_52" class="stroke-wrapper-12_52">
+            <div class="rectangle-12_52"></div>
+            <div class="stroke-12_52"></div>
+          </div>
+          <div id="12_53" class="rectangle-12_53"></div>
+          <div id="12_54" class="rectangle-12_54"></div>
+          <div id="12_57" class="vector-12_57"></div>
+          <div id="12_58" class="vector-12_58"></div>
+          <div id="12_59" class="vector-12_59"></div>
+          <div id="12_85" class="vector-12_85"></div>
+          <div id="12_86" class="vector-12_86"></div>
+          <div id="12_60" class="text-12_60">
+            <p id="12_60_0" class="paragraph-12_60_0">
+<span id="12_60_0_1" class="span-12_60_0_1">   Id      Название     Начало   Окончание   Статус  Действия</span></p>
+          </div>
+          <div id="12_94" class="group-12_94">
+            <div id="12_91" class="rectangle-12_91"></div>
+            <div id="12_93" class="text-12_93">
+              <p id="12_93_0" class="paragraph-12_93_0">
+<span id="12_93_0_1" class="span-12_93_0_1">Действия</span></p>
+            </div>
+          </div>
+          <div id="12_95" class="group-12_95">
+            <div id="12_96" class="rectangle-12_96"></div>
+            <div id="12_97" class="text-12_97">
+              <p id="12_97_0" class="paragraph-12_97_0">
+<span id="12_97_0_1" class="span-12_97_0_1">Действия</span></p>
+            </div>
+          </div>
+          <div id="12_98" class="group-12_98">
+            <div id="12_99" class="rectangle-12_99"></div>
+            <div id="12_100" class="text-12_100">
+              <p id="12_100_0" class="paragraph-12_100_0">
+<span id="12_100_0_1" class="span-12_100_0_1">Действия</span></p>
+            </div>
+          </div>
+        </div>
+        <div id="12_61" class="group-12_61">
+          <div id="12_62" class="stroke-wrapper-12_62">
+            <div class="rectangle-12_62"></div>
+            <div class="stroke-12_62"></div>
+          </div>
+          <div id="12_63" class="text-12_63">
+            <p id="12_63_0" class="paragraph-12_63_0">
+<span id="12_63_0_1" class="span-12_63_0_1">Назад</span></p>
+          </div>
+        </div>
+        <div id="12_87" class="group-12_87">
+          <div id="12_88" class="stroke-wrapper-12_88">
+            <div class="rectangle-12_88"></div>
+            <div class="stroke-12_88"></div>
+          </div>
+          <div id="12_89" class="text-12_89">
+            <p id="12_89_0" class="paragraph-12_89_0">
+<span id="12_89_0_1" class="span-12_89_0_1">Добавить полис</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+const $ = id => document.getElementById(id);
+</script>
+
+</body>
+</html>

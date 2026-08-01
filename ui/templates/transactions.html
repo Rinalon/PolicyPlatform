@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-12_65 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.frame-12_65 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.frame-12_66 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(189, 241, 202, 1);
+}
+
+.rectangle-12_67 {
+  width: 1231px;
+  height: 76px;
+  position: absolute;
+  left: 32px;
+  top: 22px;
+  border-radius: 0px 0px 46px 46px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-12_68 {
+  font-size: 56px;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 1136px;
+  height: 21px;
+  position: absolute;
+  left: 97px;
+  top: 22px;
+}
+
+.paragraph-12_68_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_68_0_1 {
+  font-size: 56px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rectangle-12_69 {
+  width: 46px;
+  height: 48px;
+  position: absolute;
+  left: 1175px;
+  top: 33px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./image/2a8e0456b29a1775c1e6ca9ec7fcd480b2578d93.png);
+}
+
+.rectangle-12_70 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(223, 249, 230, 1);
+}
+
+.stroke-wrapper-12_70 {
+  position: absolute;
+  left: 73px;
+  top: 161px;
+  width: 1172px;
+  height: 575px;
+}
+
+.stroke-12_70 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 0px 0px 0px 0px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_71 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 73px;
+  top: 161px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.rectangle-12_72 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 73px;
+  top: 316px;
+  background-color: rgba(18, 159, 73, 0.11999999731779099);
+}
+
+.rectangle-12_73 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 79px;
+  top: 488px;
+  background-color: rgba(18, 159, 73, 0.12000000476837158);
+}
+
+.rectangle-12_74 {
+  width: 1172px;
+  height: 76px;
+  position: absolute;
+  left: 73px;
+  top: 660px;
+  background-color: rgba(18, 159, 73, 0.12000000476837158);
+}
+
+.vector-12_75 {
+  width: 1.999969482421875px;
+  height: 575.0017395019531px;
+  background-image: url(./image/Line_12_75.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -81.50047029472019px;
+  top: 447.9991077010196px;
+}
+
+.vector-12_76 {
+  width: 1.9998626708984375px;
+  height: 574.0017852783203px;
+  background-image: url(./image/Line_12_76.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 579.9994865235337px;
+  top: 447.4991513737765px;
+}
+
+.vector-12_82 {
+  width: 1.9998664855957031px;
+  height: 574.0017852783203px;
+  background-image: url(./image/Line_12_82.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 315.9994865235338px;
+  top: 447.4991513737765px;
+}
+
+.vector-12_83 {
+  width: 1.9998626708984375px;
+  height: 574.0017852783203px;
+  background-image: url(./image/Line_12_83.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 126.99948652353378px;
+  top: 447.4991513737765px;
+}
+
+.vector-12_77 {
+  width: 4.999908447265625px;
+  height: 575.0069580078125px;
+  background-image: url(./image/Line_12_77.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 788.9929740669771px;
+  top: 447.99652375920766px;
+}
+
+.text-12_78 {
+  font-size: 36px;
+  font-family: Kameron;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 1152px;
+  height: auto;
+  position: absolute;
+  left: 81px;
+  top: 177px;
+}
+
+.paragraph-12_78_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_78_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_79 {
+  width: 198px;
+  height: 62px;
+  position: absolute;
+  left: 50%;
+  top: 29px;
+  transform: translateX(calc(-50% + -501px));
+}
+
+.rectangle-12_80 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.stroke-wrapper-12_80 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 165px;
+  height: 56px;
+  transform: translateX(calc(-50% + 0.5px));
+}
+
+.stroke-12_80 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(28, 164, 81, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_81 {
+  font-size: 36px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 198px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_81_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_81_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-12_65">
+  <div id="12_65" class="frame-12_65">
+    <div id="12_66" class="frame-12_66">
+      <div id="12_67" class="rectangle-12_67"></div>
+      <div id="12_68" class="text-12_68">
+        <p id="12_68_0" class="paragraph-12_68_0">
+<span id="12_68_0_1" class="span-12_68_0_1">Транзакции</span></p>
+      </div>
+      <div id="12_69" class="rectangle-12_69"></div>
+      <div id="12_70" class="stroke-wrapper-12_70">
+        <div class="stroke-12_70"></div>
+        <div class="rectangle-12_70"></div>
+      </div>
+      <div id="12_71" class="rectangle-12_71"></div>
+      <div id="12_72" class="rectangle-12_72"></div>
+      <div id="12_73" class="rectangle-12_73"></div>
+      <div id="12_74" class="rectangle-12_74"></div>
+      <div id="12_75" class="vector-12_75"></div>
+      <div id="12_76" class="vector-12_76"></div>
+      <div id="12_82" class="vector-12_82"></div>
+      <div id="12_83" class="vector-12_83"></div>
+      <div id="12_77" class="vector-12_77"></div>
+      <div id="12_78" class="text-12_78">
+        <p id="12_78_0" class="paragraph-12_78_0">
+<span id="12_78_0_1" class="span-12_78_0_1">   Тип        От кого       Кому       Id полиса       Сумма      Дата</span></p>
+      </div>
+    </div>
+    <div id="12_79" class="group-12_79">
+      <div id="12_80" class="stroke-wrapper-12_80">
+        <div class="stroke-12_80"></div>
+        <div class="rectangle-12_80"></div>
+      </div>
+      <div id="12_81" class="text-12_81">
+        <p id="12_81_0" class="paragraph-12_81_0">
+<span id="12_81_0_1" class="span-12_81_0_1">Назад</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

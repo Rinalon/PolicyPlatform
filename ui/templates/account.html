@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+ol li {
+  list-style-position: inside;
+}
+
+ol li::marker, ul li::before {
+  letter-spacing: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-0_1 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.canvas-0_1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.frame-8_11 {
+  width: 1280px;
+  height: 800px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-2_52 {
+  width: 1280px;
+  height: 800px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.frame-2_53 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(189, 241, 202, 1);
+}
+
+.rectangle-7_1 {
+  width: 577px;
+  height: 76px;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(calc(-50% + 0.5px));
+  border-radius: 46px 46px 46px 46px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-7_2 {
+  font-size: 56px;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 577px;
+  height: 76px;
+  position: absolute;
+  left: 352px;
+  top: 30px;
+}
+
+.paragraph-7_2_0 {
+  line-height: 67.7727279663086px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-7_2_0_1 {
+  font-size: 56px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-8_10 {
+  width: 1181px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  top: 467px;
+  transform: translateX(calc(-50% + 0.5px));
+}
+
+.group-8_8 {
+  width: 555px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(calc(-50% + 313px));
+}
+
+.rectangle-7_11 {
+  width: 553px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(calc(-50% + 1px));
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-7_14 {
+  font-size: 45px;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 553px;
+  height: 156px;
+  position: absolute;
+  left: 50%;
+  top: 27px;
+  transform: translateX(calc(-50% + -1px));
+}
+
+.paragraph-7_14_0 {
+  line-height: 54.460227966308594px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-7_14_0_1 {
+  font-size: 45px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.paragraph-7_14_1 {
+  line-height: 54.460227966308594px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-7_14_1_1 {
+  font-size: 45px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-7_18 {
+  width: 553px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(calc(-50% + -314px));
+}
+
+.rectangle-7_10 {
+  width: 553px;
+  height: 185px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(calc(-50% + 0px));
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-7_13 {
+  font-size: 45px;
+  font-family: Inter;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 553px;
+  height: 155.7894744873047px;
+  position: absolute;
+  left: 50%;
+  top: 26.77631378173828px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-7_13_0 {
+  line-height: 54.460227966308594px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-7_13_0_1 {
+  font-size: 45px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-8_9 {
+  width: 1050px;
+  height: 111px;
+  position: absolute;
+  left: 64px;
+  top: 213px;
+}
+
+.rectangle-8_5 {
+  width: 895px;
+  height: 111px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(calc(-50% + -77.5px));
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+  opacity: 0.8899999856948853;
+}
+
+.text-8_7 {
+  font-size: 35px;
+  font-family: Inter;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 884px;
+  height: 47px;
+  position: absolute;
+  left: 11px;
+  top: 9px;
+}
+
+.paragraph-8_7_0 {
+  line-height: 42.35795593261719px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-8_7_0_1 {
+  font-size: 35px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-8_6 {
+  font-size: 35px;
+  font-family: Inter;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 884px;
+  height: 47px;
+  position: absolute;
+  left: 11px;
+  top: 56px;
+}
+
+.paragraph-8_6_0 {
+  line-height: 42.35795593261719px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-8_6_0_1 {
+  font-size: 35px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.rectangle-13_2 {
+  width: 140px;
+  height: 111px;
+  position: absolute;
+  left: 910px;
+  top: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./image/wallet_icon.png);
+}
+
+.rectangle-7_9 {
+  width: 70px;
+  height: 69.99999237060547px;
+  position: absolute;
+  left: 50px;
+  top: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./image/policies.png);
+}
+
+.group-12_25 {
+  width: 198px;
+  height: 62px;
+  position: absolute;
+  left: 50%;
+  top: 38px;
+  transform: translateX(calc(-50% + 520px));
+}
+
+.rectangle-12_26 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.stroke-wrapper-12_26 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  width: 165px;
+  height: 56px;
+  transform: translateX(calc(-50% + 0.5px));
+}
+
+.stroke-12_26 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(28, 164, 81, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_27 {
+  font-size: 36px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 198px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_27_0 {
+  line-height: 42.732421875px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_27_0_1 {
+  font-size: 36px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-0_1">
+  <div id="0_1" class="canvas-0_1">
+    <div id="8_11" class="frame-8_11">
+      <div id="2_52" class="group-2_52">
+        <div id="2_53" class="frame-2_53">
+          <div id="7_1" class="rectangle-7_1"></div>
+          <div id="7_2" class="text-7_2">
+            <p id="7_2_0" class="paragraph-7_2_0">
+<span id="7_2_0_1" class="span-7_2_0_1">Аккаунт</span></p>
+          </div>
+          <div id="8_10" class="group-8_10">
+            <div id="8_8" class="group-8_8">
+              <div id="7_11" class="rectangle-7_11"></div>
+              <div id="7_14" class="text-7_14">
+                <p id="7_14_0" class="paragraph-7_14_0">
+<span id="7_14_0_1" class="span-7_14_0_1">История </span></p>
+                <p id="7_14_1" class="paragraph-7_14_1">
+<span id="7_14_1_1" class="span-7_14_1_1">транзакций</span></p>
+              </div>
+            </div>
+            <div id="7_18" class="group-7_18">
+              <div id="7_10" class="rectangle-7_10"></div>
+              <div id="7_13" class="text-7_13">
+                <p id="7_13_0" class="paragraph-7_13_0">
+<span id="7_13_0_1" class="span-7_13_0_1">Мои страховые продукты</span></p>
+              </div>
+            </div>
+          </div>
+          <div id="8_9" class="group-8_9">
+            <div id="8_5" class="rectangle-8_5"></div>
+            <div id="8_7" class="text-8_7">
+              <p id="8_7_0" class="paragraph-8_7_0">
+<span id="8_7_0_1" class="span-8_7_0_1">Роль:</span></p>
+            </div>
+            <div id="8_6" class="text-8_6">
+              <p id="8_6_0" class="paragraph-8_6_0">
+<span id="8_6_0_1" class="span-8_6_0_1">Адрес:</span></p>
+            </div>
+            <div id="13_2" class="rectangle-13_2"></div>
+          </div>
+          <div id="7_9" class="rectangle-7_9"></div>
+          <div id="12_25" class="group-12_25">
+            <div id="12_26" class="stroke-wrapper-12_26">
+              <div class="rectangle-12_26"></div>
+              <div class="stroke-12_26"></div>
+            </div>
+            <div id="12_27" class="text-12_27">
+              <p id="12_27_0" class="paragraph-12_27_0">
+<span id="12_27_0_1" class="span-12_27_0_1">Выход</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+const $ = id => document.getElementById(id);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Kameron';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Kameron-Regular_1.ttf) format(truetype);
+}
+
+		
+@font-face {
+  font-family: 'Kantumruy';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../font/Kantumruy-Regular_2.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100 900;
+  src: url(../font/Inter_1.ttf) format(truetype);
+}
+

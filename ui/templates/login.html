@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-6_1 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.frame-6_1 {
+  width: 1280px;
+  height: 800px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-2_8 {
+  width: 1280px;
+  height: 800px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.frame-2_1 {
+  width: 1280px;
+  height: 800px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(189, 241, 202, 1);
+}
+
+.rectangle-2_2 {
+  width: 723px;
+  height: 634px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + -0.5px)) translateY(calc(-50% + 0px));
+  border-radius: 46px 46px 46px 46px;
+  background-color: rgba(28, 164, 81, 0.4399999976158142);
+}
+
+.text-2_3 {
+  font-size: 70px;
+  font-family: Kantumruy;
+  text-align: center;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 1);
+  width: 625px;
+  height: 91px;
+  position: absolute;
+  left: 50%;
+  top: 107px;
+  transform: translateX(calc(-50% + -0.5px));
+}
+
+.paragraph-2_3_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-2_3_0_1 {
+  font-size: 70px;
+  font-family: Kantumruy;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-2_4 {
+  font-size: 25px;
+  font-family: Kantumruy;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+  width: 625px;
+  height: 32px;
+  position: absolute;
+  left: 50%;
+  top: 637px;
+  transform: translateX(calc(-50% + 0.5px));
+}
+
+.paragraph-2_4_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-2_4_0_1 {
+  font-size: 25px;
+  font-family: Kantumruy;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-11_5 {
+  width: 585px;
+  height: 253.00001525878906px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + -0.5px)) translateY(calc(-50% + -32.49999237060547px));
+}
+
+.group-11_1 {
+  width: 585px;
+  height: 112.24000549316406px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 0px)) translateY(calc(-50% + 70.3800048828125px));
+}
+
+.rectangle-2_5 {
+  width: 538.2000122070312px;
+  height: 56.12000274658203px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 0.0000057220458984375px)) translateY(calc(-50% + 28.060001373291016px));
+  background-color: rgba(255, 252, 252, 1);
+}
+
+.text-2_7 {
+  font-size: 40px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 585px;
+  height: 39.560001373291016px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 0px)) translateY(calc(-50% + -36.34000205993652px));
+}
+
+.paragraph-2_7_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-2_7_0_1 {
+  font-size: 40px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-11_2 {
+  width: 585px;
+  height: 112.24000549316406px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 0px)) translateY(calc(-50% + -70.3800048828125px));
+}
+
+.rectangle-11_3 {
+  width: 538.2000122070312px;
+  height: 56.12000274658203px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 0.0000057220458984375px)) translateY(calc(-50% + 28.060001373291016px));
+  background-color: rgba(255, 252, 252, 1);
+}
+
+.text-11_4 {
+  font-size: 40px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 1);
+  width: 585px;
+  height: 44.15999984741211px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(calc(-50% + 0px)) translateY(calc(-50% + -34.04000282287598px));
+}
+
+.paragraph-11_4_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-11_4_0_1 {
+  font-size: 40px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.group-12_3 {
+  width: 292px;
+  height: 69px;
+  position: absolute;
+  left: 50%;
+  top: 531px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.rectangle-12_1 {
+  width: 292px;
+  height: 69px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  transform: translateX(calc(-50% + 0px));
+  border-radius: 46px 46px 46px 46px;
+  background-color: rgba(28, 164, 81, 1);
+}
+
+.text-12_2 {
+  font-size: 40px;
+  font-family: Kameron;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 1);
+  width: 198px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 13px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_2_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_2_0_1 {
+  font-size: 40px;
+  font-family: Kameron;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-6_1">
+  <div id="6_1" class="frame-6_1">
+    <div id="2_8" class="group-2_8">
+      <div id="2_1" class="frame-2_1">
+        <div id="2_2" class="rectangle-2_2"></div>
+        <div id="2_3" class="text-2_3">
+          <p id="2_3_0" class="paragraph-2_3_0">
+<span id="2_3_0_1" class="span-2_3_0_1">Войти</span></p>
+        </div>
+        <div id="2_4" class="text-2_4">
+          <p id="2_4_0" class="paragraph-2_4_0">
+<span id="2_4_0_1" class="span-2_4_0_1">Зарегистрироваться</span></p>
+        </div>
+        <div id="11_5" class="group-11_5">
+          <div id="11_1" class="group-11_1">
+            <div id="2_5" class="rectangle-2_5"></div>
+            <div id="2_7" class="text-2_7">
+              <p id="2_7_0" class="paragraph-2_7_0">
+<span id="2_7_0_1" class="span-2_7_0_1">Пароль</span></p>
+            </div>
+          </div>
+          <div id="11_2" class="group-11_2">
+            <div id="11_3" class="rectangle-11_3"></div>
+            <div id="11_4" class="text-11_4">
+              <p id="11_4_0" class="paragraph-11_4_0">
+<span id="11_4_0_1" class="span-11_4_0_1">Приватный ключ</span></p>
+            </div>
+          </div>
+        </div>
+        <div id="12_3" class="group-12_3">
+          <div id="12_1" class="rectangle-12_1"></div>
+          <div id="12_2" class="text-12_2">
+            <p id="12_2_0" class="paragraph-12_2_0">
+<span id="12_2_0_1" class="span-12_2_0_1">Войти</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

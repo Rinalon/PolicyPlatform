@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-12_143 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.frame-12_143 {
+  width: 200px;
+  height: 182px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.rectangle-12_144 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_144 {
+  position: absolute;
+  left: 100px;
+  top: 85px;
+  width: 91px;
+  height: 19px;
+}
+
+.stroke-12_144 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_145 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(28, 164, 81, 0.8799999952316284);
+}
+
+.stroke-wrapper-12_145 {
+  position: absolute;
+  left: 100px;
+  top: 146px;
+  width: 91px;
+  height: 18px;
+}
+
+.stroke-12_145 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(28, 164, 81, 0.8799999952316284);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_146 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(201, 51, 51, 1);
+}
+
+.stroke-wrapper-12_146 {
+  position: absolute;
+  left: 38px;
+  top: 146px;
+  width: 58px;
+  height: 18px;
+}
+
+.stroke-12_146 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(201, 51, 51, 1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_147 {
+  font-size: 9px;
+  font-family: Inter;
+  color: rgba(255, 255, 255, 1);
+  width: 70px;
+  height: 11px;
+  position: absolute;
+  left: 114px;
+  top: 149px;
+}
+
+.paragraph-12_147_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_147_0_1 {
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_149 {
+  font-size: 9px;
+  font-family: Inter;
+  color: rgba(255, 255, 255, 1);
+  width: 55px;
+  height: 18px;
+  position: absolute;
+  left: 45px;
+  top: 149px;
+}
+
+.paragraph-12_149_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_149_0_1 {
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_150 {
+  font-size: 16px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 171px;
+  height: 31px;
+  position: absolute;
+  left: 50%;
+  top: 19px;
+  transform: translateX(calc(-50% + 5.5px));
+}
+
+.paragraph-12_150_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_150_0_1 {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_151 {
+  font-size: 10px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 110px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(calc(-50% + 0px));
+}
+
+.paragraph-12_151_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_151_0_1 {
+  font-size: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_152 {
+  font-size: 10px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 163px;
+  height: 19px;
+  position: absolute;
+  left: 10px;
+  top: 88px;
+}
+
+.paragraph-12_152_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_152_0_1 {
+  font-size: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_153 {
+  font-size: 6px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 168px;
+  height: 15px;
+  position: absolute;
+  left: 16px;
+  top: 109px;
+}
+
+.paragraph-12_153_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_153_0_1 {
+  font-size: 6px;
+  font-family: Inter;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-12_143">
+  <div id="12_143" class="frame-12_143">
+    <div id="12_144" class="stroke-wrapper-12_144">
+      <div class="stroke-12_144"></div>
+      <div class="rectangle-12_144"></div>
+    </div>
+    <div id="12_145" class="stroke-wrapper-12_145">
+      <div class="stroke-12_145"></div>
+      <div class="rectangle-12_145"></div>
+    </div>
+    <div id="12_146" class="stroke-wrapper-12_146">
+      <div class="stroke-12_146"></div>
+      <div class="rectangle-12_146"></div>
+    </div>
+    <div id="12_147" class="text-12_147">
+      <p id="12_147_0" class="paragraph-12_147_0">
+<span id="12_147_0_1" class="span-12_147_0_1">Подтвердить</span></p>
+    </div>
+    <div id="12_149" class="text-12_149">
+      <p id="12_149_0" class="paragraph-12_149_0">
+<span id="12_149_0_1" class="span-12_149_0_1">Отменить</span></p>
+    </div>
+    <div id="12_150" class="text-12_150">
+      <p id="12_150_0" class="paragraph-12_150_0">
+<span id="12_150_0_1" class="span-12_150_0_1">Ввод суммы премии</span></p>
+    </div>
+    <div id="12_151" class="text-12_151">
+      <p id="12_151_0" class="paragraph-12_151_0">
+<span id="12_151_0_1" class="span-12_151_0_1">страховой контракт #</span></p>
+    </div>
+    <div id="12_152" class="text-12_152">
+      <p id="12_152_0" class="paragraph-12_152_0">
+<span id="12_152_0_1" class="span-12_152_0_1">Введите сумму:</span></p>
+    </div>
+    <div id="12_153" class="text-12_153">
+      <p id="12_153_0" class="paragraph-12_153_0">
+<span id="12_153_0_1" class="span-12_153_0_1">минимальная сумма 10 BLY</span></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>

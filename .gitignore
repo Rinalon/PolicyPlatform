@@ -1,0 +1,11 @@
+.env
+
+source/config.py
+source/test.py
+artifacts/
+.venv
+.idea
+.states
+.deps
+__pycache__
+

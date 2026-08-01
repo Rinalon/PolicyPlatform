@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixso HTML</title>
+  <link rel="stylesheet" href="css/font.css">
+  <script src="js/animation.js"></script>
+  <style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ol,ul,menu {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body { 
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: white;
+}
+    
+span {
+  word-break: break-word;
+}
+
+.scroll-container-12_123 {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.frame-12_123 {
+  width: 285px;
+  height: 372px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.rectangle-12_124 {
+  width: 248px;
+  height: 62px;
+  position: absolute;
+  left: 18px;
+  top: 17px;
+  border-radius: 12px 12px 12px 12px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.rectangle-12_137 {
+  width: 54px;
+  height: 18px;
+  position: absolute;
+  left: 190px;
+  top: 336px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.rectangle-12_138 {
+  width: 113px;
+  height: 18px;
+  position: absolute;
+  left: 18px;
+  top: 336px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(18, 159, 73, 0.4399999976158142);
+}
+
+.group-12_127 {
+  width: 248px;
+  height: 36px;
+  position: absolute;
+  left: 18px;
+  top: 104px;
+}
+
+.rectangle-12_125 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_125 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 36px;
+}
+
+.stroke-12_125 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_126 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_126 {
+  position: absolute;
+  left: 96px;
+  top: 0px;
+  width: 152px;
+  height: 36px;
+}
+
+.stroke-12_126 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.group-12_128 {
+  width: 248px;
+  height: 36px;
+  position: absolute;
+  left: 18px;
+  top: 156px;
+}
+
+.rectangle-12_129 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_129 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 36px;
+}
+
+.stroke-12_129 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_130 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_130 {
+  position: absolute;
+  left: 96px;
+  top: 0px;
+  width: 152px;
+  height: 36px;
+}
+
+.stroke-12_130 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.group-12_131 {
+  width: 248px;
+  height: 36px;
+  position: absolute;
+  left: 18px;
+  top: 210px;
+}
+
+.rectangle-12_132 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_132 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 36px;
+}
+
+.stroke-12_132 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_133 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_133 {
+  position: absolute;
+  left: 96px;
+  top: 0px;
+  width: 152px;
+  height: 36px;
+}
+
+.stroke-12_133 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.group-12_134 {
+  width: 248px;
+  height: 36px;
+  position: absolute;
+  left: 18px;
+  top: 264px;
+}
+
+.rectangle-12_135 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_135 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 36px;
+}
+
+.stroke-12_135 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.rectangle-12_136 {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px 6px 6px 6px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.stroke-wrapper-12_136 {
+  position: absolute;
+  left: 96px;
+  top: 0px;
+  width: 152px;
+  height: 36px;
+}
+
+.stroke-12_136 {
+  position: absolute;
+  inset: 0px;
+  border-radius: 6px 6px 6px 6px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: rgba(18, 159, 73, 0.4399999976158142);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.text-12_139 {
+  font-size: 9px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 104px;
+  height: 16px;
+  position: absolute;
+  left: 27px;
+  top: 338px;
+}
+
+.paragraph-12_139_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_139_0_1 {
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_140 {
+  font-size: 9px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 96px;
+  height: 14px;
+  position: absolute;
+  left: 196px;
+  top: 338px;
+}
+
+.paragraph-12_140_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_140_0_1 {
+  font-size: 9px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.text-12_141 {
+  font-size: 25px;
+  font-family: Inter;
+  color: rgba(0, 0, 0, 1);
+  width: 187px;
+  height: 36px;
+  position: absolute;
+  left: 42px;
+  top: 30px;
+}
+
+.paragraph-12_141_0 {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.span-12_141_0_1 {
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+  </style>
+</head>
+<body>
+<div class="scroll-container-12_123">
+  <div id="12_123" class="frame-12_123">
+    <div id="12_124" class="rectangle-12_124"></div>
+    <div id="12_137" class="rectangle-12_137"></div>
+    <div id="12_138" class="rectangle-12_138"></div>
+    <div id="12_127" class="group-12_127">
+      <div id="12_125" class="stroke-wrapper-12_125">
+        <div class="stroke-12_125"></div>
+        <div class="rectangle-12_125"></div>
+      </div>
+      <div id="12_126" class="stroke-wrapper-12_126">
+        <div class="stroke-12_126"></div>
+        <div class="rectangle-12_126"></div>
+      </div>
+    </div>
+    <div id="12_128" class="group-12_128">
+      <div id="12_129" class="stroke-wrapper-12_129">
+        <div class="stroke-12_129"></div>
+        <div class="rectangle-12_129"></div>
+      </div>
+      <div id="12_130" class="stroke-wrapper-12_130">
+        <div class="stroke-12_130"></div>
+        <div class="rectangle-12_130"></div>
+      </div>
+    </div>
+    <div id="12_131" class="group-12_131">
+      <div id="12_132" class="stroke-wrapper-12_132">
+        <div class="stroke-12_132"></div>
+        <div class="rectangle-12_132"></div>
+      </div>
+      <div id="12_133" class="stroke-wrapper-12_133">
+        <div class="stroke-12_133"></div>
+        <div class="rectangle-12_133"></div>
+      </div>
+    </div>
+    <div id="12_134" class="group-12_134">
+      <div id="12_135" class="stroke-wrapper-12_135">
+        <div class="stroke-12_135"></div>
+        <div class="rectangle-12_135"></div>
+      </div>
+      <div id="12_136" class="stroke-wrapper-12_136">
+        <div class="stroke-12_136"></div>
+        <div class="rectangle-12_136"></div>
+      </div>
+    </div>
+    <div id="12_139" class="text-12_139">
+      <p id="12_139_0" class="paragraph-12_139_0">
+<span id="12_139_0_1" class="span-12_139_0_1">Заключить контракт</span></p>
+    </div>
+    <div id="12_140" class="text-12_140">
+      <p id="12_140_0" class="paragraph-12_140_0">
+<span id="12_140_0_1" class="span-12_140_0_1">Закрыть</span></p>
+    </div>
+    <div id="12_141" class="text-12_141">
+      <p id="12_141_0" class="paragraph-12_141_0">
+<span id="12_141_0_1" class="span-12_141_0_1">Полис #</span></p>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+</script>
+
+</body>
+</html>
