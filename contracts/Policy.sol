@@ -27,7 +27,6 @@ contract Insurance is ReentrancyGuard {
         uint64 endDate;
         uint64 durationWork;
         uint16 countOfPayout;
-        uint8 status;
         bool hasPendingClaim;
         
         address insurer;
@@ -37,6 +36,7 @@ contract Insurance is ReentrancyGuard {
         
         string name;
         string conditions;
+        PolicyStatus status;
     }
 
     struct User {
@@ -81,13 +81,13 @@ contract Insurance is ReentrancyGuard {
     event PolicySigned(
         address indexed insurer, 
         address indexed policyholder, 
-        uint indexed policyID, 
+        uint indexed policyId, 
         uint timestamp
     );
     
     event PolicyDeposited(
         address indexed policyholder, 
-        uint indexed policyID, 
+        uint indexed policyId, 
         uint amount, 
         uint timestamp
     );
@@ -102,14 +102,14 @@ contract Insurance is ReentrancyGuard {
     event TerminateRequest(
         address indexed insurer, 
         address indexed policyholder, 
-        uint indexed policyID, 
+        uint indexed policyId, 
         uint timestamp
     );
 
     event ClaimApproved(
         address indexed insurer, 
         address indexed policyholder, 
-        uint indexed policyID, 
+        uint indexed policyId, 
         uint amount, 
         uint timestamp
     );
@@ -117,7 +117,7 @@ contract Insurance is ReentrancyGuard {
     event ClaimRejected(
         address indexed insurer, 
         address indexed policyholder, 
-        uint indexed policyID, 
+        uint indexed policyId, 
         string reason, 
         uint timestamp
     );
@@ -125,7 +125,7 @@ contract Insurance is ReentrancyGuard {
     event PolicyTerminated(
         address indexed insurer, 
         address indexed policyholder, 
-        uint indexed policyID, 
+        uint indexed policyId, 
         uint timestamp
     );
 

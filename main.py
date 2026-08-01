@@ -12,6 +12,7 @@ from ui.transactions import TransactionsWindow
 
 from source.api import API
 from source.utils import *
+from source.types import User
 from source.config import RPC_URL, CONTRACT_ADDRESS
 
 class MainApp:
@@ -61,16 +62,23 @@ class MainApp:
         self.show_login()
 # Настройки
     def api_connect(self):
-        error = None
+
         curr_dir = os.path.dirname(os.path.abspath(__file__))
-        abi = load_abi_from_file(curr_dir + "/source/insurance_abi.json")
-        if not abi:
-            error = "ABI not found"
+
+        contract_abi = load_abi_from_file(curr_dir + "/source/insurance_abi.json")
+        token_abi = load_abi_from_file(curr_dir + "/source/token_abi.json")
+
+        if not contract_abi:
+            return "Contract ABI not found"
+
+
+        if not token_abi:
+            return "Token ABI not found"
+
         try:
-            self.api = API(RPC_URL, CONTRACT_ADDRESS, abi)
+            self.api = API(RPC_URL, CONTRACT_ADDRESS, contract_abi, token_abi)
         except Exception as e:
-            error = e
-        return error
+            return e
 
     def win_connect(self):
         # LoginWindow
